@@ -1,9 +1,11 @@
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-    <hi>jjjs</hi>
+    <Dashboard />
     </div>
   );
 }
