@@ -2,6 +2,7 @@
   padding: 40px;
   width: 350px;
   border-radius: 3px;
+  margin: 10px;
 }
 
 .online {
@@ -10,3 +11,8 @@
 .dark-blue{
   background-color: #1d2939;
 }
+
+.allusers {
+  background-color: #E9ECEF;
+}
+

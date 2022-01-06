@@ -8,12 +8,14 @@ import Verifications from './Verifications';
 function Dashboard() {
   return (
     <div className='container mx-auto mt-5'>
+      <div className="row">
       <Customers />
       <OnlineCustomers />
       <Leads />
       <WithdrawalsPending />
       <DepositsPending />
       <Verifications />
+      </div>
     </div>
   )
 }

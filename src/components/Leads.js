@@ -1,10 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Leads = () => {
+  const navigate = useNavigate();
+  
+  const handleRoutes = (path) => {
+    navigate(path);
+  };
   return (
-    <div className="box dark-blue text-light">
-      <h6>LEADS</h6>
-    </div>
+     <button className="btn box dark-blue text-light"  onClick={() => handleRoutes('/allleads')}>
+     <h6>LEADS</h6>
+   </button>
   )
 }
 

@@ -1,11 +1,16 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 const Customers = () => {
+  const navigate = useNavigate();
+  
+  const handleRoutes = (path) => {
+    navigate(path);
+  };
+
   return (
-    <div className="box bg-primary text-light">
-      <FontAwesomeIcon icon="fa-solid fa-users" />
+    <button className="btn box bg-primary text-light"  onClick={() => handleRoutes('/allusers')}>
       <h6>CUSTOMERS</h6>
-    </div>
+    </button>
   )
 }
 
